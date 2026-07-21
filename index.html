@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette Master Painters | Let's Paint Some Fun!</title>
+    <meta name="description" content="Expert interior & exterior painting with vibrant colors and fun designs.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fun, rounded Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="blob-bg blob-1"></div>
+    <div class="blob-bg blob-2"></div>
+    <div class="blob-bg blob-3"></div>
+
+    <nav class="fun-nav">
+        <div class="logo">PALETTE MASTER</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#estimate">Get an Estimate</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1 class="fun-headline">LET'S PAINT<br><span class="text-gradient">SOME FUN!</span></h1>
+            <p class="subheader">Bringing your wildest color dreams to life with vibrant, energetic finishes for interiors and exteriors.</p>
+            <button class="cta-pill bounce-hover">Get Started Today!</button>
+            
+            <div class="services-badges">
+                <div class="badge bounce-hover">
+                    <span class="emoji">🎨</span> Interior Magic
+                </div>
+                <div class="badge bounce-hover">
+                    <span class="emoji">🏡</span> Exterior Pop
+                </div>
+                <div class="badge bounce-hover">
+                    <span class="emoji">✨</span> Custom Murals
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visuals">
+            <div class="hero-image-wrapper pop-in">
+                <img src="images/fun_living_room.png" alt="Colorful fun living room" class="hero-img">
+            </div>
+        </div>
+    </main>
+
+    <!-- SECTION: OUR PROCESS -->
+    <section id="process" class="section-padding content-section">
+        <h2 class="section-title text-center">HOW WE DO IT</h2>
+        <p class="section-subtitle text-center">A splash of planning, a whole lot of color!</p>
+        
+        <div class="process-grid">
+            <div class="process-card scroll-bounce">
+                <div class="step-blob color-blue">1</div>
+                <h3>Dream It Up</h3>
+                <p>We consult with you to pick the boldest, brightest, and most fun colors that fit your personality perfectly.</p>
+            </div>
+            <div class="process-card scroll-bounce">
+                <div class="step-blob color-pink">2</div>
+                <h3>Prep the Canvas</h3>
+                <p>We cover the floors, patch the holes, and get everything smooth and ready for the magic to happen.</p>
+            </div>
+            <div class="process-card scroll-bounce">
+                <div class="step-blob color-yellow">3</div>
+                <h3>Splash the Color</h3>
+                <p>Our expert painters bring the vibrant colors to life with flawless execution and a lot of positive energy.</p>
+            </div>
+        </div>
+        
+        <div class="process-image-wrapper text-center scroll-bounce">
+            <img src="images/paint_splash.png" alt="Colorful paint splash" class="splash-img">
+        </div>
+    </section>
+
+    <!-- SECTION: PORTFOLIO -->
+    <section id="portfolio" class="section-padding content-section">
+        <h2 class="section-title text-center">OUR COLORFUL WORK</h2>
+        <p class="section-subtitle text-center">Check out some of our favorite vibrant transformations!</p>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-card scroll-bounce bounce-hover">
+                <img src="images/fun_living_room.png" alt="Living Room Mural">
+                <div class="card-info">
+                    <h4>Geometric Living Room</h4>
+                    <p>Sunny Yellow & Hot Pink</p>
+                </div>
+            </div>
+            <div class="portfolio-card scroll-bounce bounce-hover">
+                <img src="images/colorful_exterior.png" alt="Colorful House Exterior">
+                <div class="card-info">
+                    <h4>Rainbow Retreat</h4>
+                    <p>Vibrant Exterior Facelift</p>
+                </div>
+            </div>
+            <div class="portfolio-card scroll-bounce bounce-hover">
+                <img src="images/paint_splash.png" alt="Paint details">
+                <div class="card-info">
+                    <h4>Custom Splashes</h4>
+                    <p>Creative Studio Space</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: ESTIMATE -->
+    <section id="estimate" class="section-padding content-section">
+        <div class="estimate-container scroll-bounce">
+            <h2 class="section-title text-white">READY FOR A CHANGE?</h2>
+            <p class="section-subtitle text-white">Let's make something awesome together!</p>
+            
+            <form class="estimate-form" id="estimateForm">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder="Your Awesome Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder="Your Best Email">
+                </div>
+                <div class="form-group full-width">
+                    <select id="service" required>
+                        <option value="" disabled selected>What do you want to paint?</option>
+                        <option value="interior">My Living Space</option>
+                        <option value="exterior">My House Exterior</option>
+                        <option value="mural">A Cool Custom Mural</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <textarea id="details" rows="4" required placeholder="Tell us about your wild colorful ideas..."></textarea>
+                </div>
+                <button type="submit" class="cta-pill submit-btn bounce-hover">SEND IT!</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact" class="footer scroll-bounce">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3 class="logo footer-logo">PALETTE MASTER</h3>
+                <p>Bringing color, joy, and impeccable painting to your world.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Say Hello!</h4>
+                <p>hello@palettemaster.fun</p>
+                <p>+1 (800) YAY-COLOR</p>
+                <p>123 Rainbow Way, Sunnyville</p>
+            </div>
+            <div class="footer-social">
+                <h4>Let's Connect</h4>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Palette Master Painters. Have a colorful day!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
