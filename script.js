@@ -1,5 +1,17 @@
 // script.js - Fun & Bouncy
 document.addEventListener('DOMContentLoaded', () => {
+    // Move the fixed navbar into the top edge once scrolling begins.
+    const funNav = document.querySelector('.fun-nav');
+
+    if (funNav) {
+        const updateNavPosition = () => {
+            funNav.classList.toggle('is-scrolled', window.scrollY > 20);
+        };
+
+        updateNavPosition();
+        window.addEventListener('scroll', updateNavPosition, { passive: true });
+    }
+
     // Mobile Menu Toggle
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
